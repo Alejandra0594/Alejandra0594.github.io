@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*menu*/
+.contenedor-header {
+    background-color: coral;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: aliceblue;
+}
+
+.contenedor-header header .logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    color: #b0ccc6;
+    text-decoration: none;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: crimson;
+}
+
+.nav-responsive {
+    background-color: crimson;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*seccion sobre mi*/
+.sobremi {
+    background: rgb(237, 166, 100);
+    align-items: center;
+}
+
+.sobremi .contenido-banner {
+    padding: 10px;
+    background-color: rgb(255, 208, 0);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.sobremi p {
+    color: #fff;
+    padding: none;
+    text-align: none;
+}
+
+.sobremi .contenido-banner img {
+    margin-top: 40px;
+    border: 10px solid #b0ccc6;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+/*seccion mis intereses*/
+.misintereses {
+    background-color: #b0ccc6;
+    color: #fff;
+    padding: 50px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.misintereses .contenido-seccion {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.misintereses .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.misintereses .perritos {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.misintereses .perritos img {
+    width: 100%;
+    display: block;
+}
+
+.misintereses .perritos .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
